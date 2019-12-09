@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin</title>
+</head>
+<body>
+<table border="1">
+<!--    {{ name }}-->
+
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Password</th>
+    </tr>
+    </thead>
+
+    {% for user  in users %}
+    <tr>
+        <td>
+<!--            {{index }}-->
+        </td>
+        <td>{{ user["name"] }}</td>=<td>{{ user["password"] }}</td>
+    </tr>
+</table>
+</body>
+</html>

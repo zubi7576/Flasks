@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="Images/logo.jpg " type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        *
+{
+    box-sizing:border-box;
+
+}
+body
+{
+    font-family: 'Calibri', sans-serif;
+}
+
+.login-title
+{
+   background-color: #f2f2f2;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 13px 0;
+
+}
+.login-title h3 {
+
+    line-height: 33px;
+    color: #535657;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.login-form
+{
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+}
+
+#bt2 {
+    background-color: dodgerblue;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+#bt2:hover {
+    opacity: 1;
+}
+a
+{
+    color: dodgerblue;
+}
+a:hover
+{
+    color: dodgerblue;
+}
+@media screen and(max-width: 480px) {
+    #cont
+    {
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        width: 500px;
+        margin-top: 200px;
+    }
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6 login-form">
+            <form action="/user" method="post">
+                <h3 class="text-primary login-title">Log Into Your Account</h3>
+                <label><i class="fa fa-user"></i> Email</label>
+                <input class="form-control in1" type="text" name="name" placeholder="John Doe" required><br>
+                <label><i class="fa fa-user"></i> Email</label>
+                <input class="form-control in1" type="email" name="email" placeholder="example@mail.com" required><br>
+                <label><i class="fa fa-key"></i> Password</label>
+                <input class="form-control" type="password" placeholder="Password" name="password">
+
+                <input id="bt2" type="submit" name="submit" value="SignUp">
+                <label>
+                    <input  type="checkbox" name="remember"> Remember me
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
